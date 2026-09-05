@@ -1,4 +1,4 @@
-#  修改脚本 563行的配置信息
+﻿#  修改脚本 563行的配置信息
 #  脚本同文件夹放青龙面板自带的notify.py推送脚本
 """
 习酒花园（微信协议版）- 统一合并版本
@@ -31,7 +31,8 @@
                   0 = 关闭酿酒（不投粮、不制酒、不处理酒坛）
                   1 = 开启酿酒（默认）
 
-cron: 31 8,16 * * *
+cron: @boot
+@boot
 """
 # name: 习酒
 
@@ -1111,7 +1112,7 @@ def run(client, do_daily=True):
             can_put = min((sorghum // 200) * 200, 5000, wine_yeast * 200)
             if can_put >= 200:
                 log.info("   📭 无酒坛 → 制酒 %s 斤高粱（消耗酒曲 %s 块）" % (can_put, can_put // 200))
-                try: r = client.discharge_grain({"volumn": can_put}); log.info("      ✅ 制酒成功: %s" % r); sorghum -= can_put; wine_yeast -= can_put // 200
+                try: r = client.discharge_grain({"volumn": can_put}); log.info("      ✅ 制酒成功"); sorghum -= can_put; wine_yeast -= can_put // 200
                 except RuntimeError as e: log.warning("      ❌ 制酒失败：%s" % e)
                 time.sleep(1)
             elif sorghum < 200: log.info("   📭 无酒坛，高粱不足（有 %s 斤）" % sorghum)

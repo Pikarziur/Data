@@ -4,7 +4,7 @@
 变量：
   YYB_SERVER    YYB-Go-Enhanced 地址@账号标识，多账号一行一个，必须配置
                 示例：yyb-go:8000@openid
-  cron: 57 10,13 * * *
+  # cron: 6 12,21 * * *
 
 可选：
   JPH_NOTIFY     通知开关，默认 1；填 0 关闭 sendNotify
