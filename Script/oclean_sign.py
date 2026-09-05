@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # =========================================================
-# Oclean 欧克林商城 · 每日签到
+# name: Oclean签到
 # 接口：POST https://mall.oclean.com/API/VshopProcess.ashx
 # 青龙环境变量：OCLEAN_COOKIE  一行一个 Shop-Member 值，多账号一行一条
 # cron: 13 12,21 * * *

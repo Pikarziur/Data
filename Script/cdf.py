@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # =========================================================
-# 中免会员（cdf）小程序签到脚本 · 青龙 + YYB-Go-Enhanced
+# name:  中免会员（cdf）
 # 接口：/api/session/wxSession/v2（登录）+ /api/user/sign（签到）
 # 青龙环境变量：YYB_SERVER = yyb-go:8000@1  多账号一行一条
 # 新手配置：文件顶部 YYB_ONLY_REFS / SIGN_LNG / SIGN_LAT
