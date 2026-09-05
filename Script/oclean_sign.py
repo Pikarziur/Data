@@ -4,7 +4,9 @@
 # name: Oclean签到
 # 接口：POST https://mall.oclean.com/API/VshopProcess.ashx
 # 青龙环境变量：OCLEAN_COOKIE  一行一个 Shop-Member 值，多账号一行一条
-# cron: 13 12,21 * * *
+# cron: 11 12,20 * * *
+
+
 # =========================================================
 
 import os

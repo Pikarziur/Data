@@ -5,7 +5,8 @@
 # 接口：/api/session/wxSession/v2（登录）+ /api/user/sign（签到）
 # 青龙环境变量：YYB_SERVER = yyb-go:8000@1  多账号一行一条
 # 新手配置：文件顶部 YYB_ONLY_REFS / SIGN_LNG / SIGN_LAT
-# cron: 1 12,21 * * *
+# cron: 1 12,20 * * *
+
 =========================================================
 
 import os, re, time, random, traceback, json
